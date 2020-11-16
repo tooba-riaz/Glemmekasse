@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.HomeFragment">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:textAlignment="center"
+        android:paddingTop="10dp"
+        android:text="@string/glemmekasse"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        android:textSize="25sp"
+        />
+
+    <ImageView
+        android:id="@+id/create_post"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/plus_icon"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="14dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/posts"
+        android:layout_below="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+</RelativeLayout>

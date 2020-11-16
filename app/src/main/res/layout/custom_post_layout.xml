@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+        <ImageView
+            android:id="@+id/school_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/school_icon"
+            />
+        <TextView
+            android:id="@+id/school_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gosford_hill_school"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:layout_toEndOf="@+id/school_icon"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorPrimary" />
+        <ImageView
+            android:id="@+id/option_button"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/option"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/discription_icon"
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/description_icon"
+            />
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/i_found_this_on_desk_in_9th_class"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:layout_toEndOf="@+id/discription_icon"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            tools:ignore="RtlHardcoded" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/image"
+        android:scaleType="fitCenter"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_pirates"
+                android:layout_width="176dp"
+                android:layout_height="22dp"
+                android:text="@string/this_is_mine"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio_ninjas"
+                android:layout_width="411dp"
+                android:layout_height="wrap_content"
+                android:text="@string/i_know_whom_this_belongs_to"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="@string/claim"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/background"/>
+    </RelativeLayout>
+
+</LinearLayout>
